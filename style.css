@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #D4C7B4;
+    text-align: center;
+}
+#container>div>img{
+    height: 300px;
+    width: auto;
+}
+
+/*----First Way----*/
+
+/* #container{
+    display: grid;
+    grid-template-areas: "img1 img1 img1"
+                         "img2 img3 img4"
+                         "img5 img6 img7"
+                         "img8 img9 img10";
+    gap: 30px;
+    grid-template-rows:repeat(4,300px);
+
+}
+
+#b-1{
+    grid-area: img1;
+}
+#b-2{
+    grid-area: img2;
+}
+#b-3{
+    grid-area: img3;
+}
+#b-4{
+    grid-area: img4;
+}
+#b-5{
+    grid-area: img5;
+}
+#b-6{
+    grid-area: img6;
+}
+#b-7{
+    grid-area: img7;
+}
+#b-8{
+    grid-area: img8;
+}
+#b-9{
+    grid-area: img9;
+}
+#b-10{
+    grid-area: img10;
+} */
+
+/*----Second Way----*/
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+#b-1{
+    grid-column: 1/4;
+}
